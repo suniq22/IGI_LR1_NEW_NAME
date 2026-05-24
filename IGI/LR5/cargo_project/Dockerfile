@@ -23,4 +23,4 @@ RUN DJANGO_SECRET_KEY=build-dummy DJANGO_DEBUG=False python manage.py collectsta
 EXPOSE 8000
 
 # $PORT is provided by Railway/Render/Heroku; defaults to 8000 locally / in docker-compose.
-CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
+CMD ["sh", "-c", "python manage.py migrate --noinput; echo '=== migrate done ==='; gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120 2>&1"]
