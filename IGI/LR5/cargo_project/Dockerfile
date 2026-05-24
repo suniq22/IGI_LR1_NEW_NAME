@@ -17,7 +17,10 @@ COPY . /app
 
 RUN mkdir -p /app/logs /app/media /app/staticfiles
 
+# collect static files at build time (no DB needed)
+RUN DJANGO_SECRET_KEY=build-dummy DJANGO_DEBUG=False python manage.py collectstatic --noinput
+
 EXPOSE 8000
 
 # $PORT is provided by Railway/Render/Heroku; defaults to 8000 locally / in docker-compose.
-CMD ["sh", "-c", "python manage.py migrate --noinput && (python manage.py collectstatic --noinput || true) && gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
