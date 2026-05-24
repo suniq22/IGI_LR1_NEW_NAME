@@ -1,4 +1,4 @@
-<!doctype html>
+{% load tz %}<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -59,8 +59,8 @@
 <aside class="sidebar container">
     <div class="info-card">
         <strong>Таймзона:</strong> {{ user_timezone }}<br>
-        <strong>Локально:</strong> {{ now_local|date:"d/m/Y H:i" }}<br>
-        <strong>UTC:</strong> {{ now_utc|date:"d/m/Y H:i" }} UTC<br>
+        <strong>Локально:</strong> {{ now_local|localtime|date:"d/m/Y H:i" }}<br>
+        {% timezone "UTC" %}<strong>UTC:</strong> {{ now_utc|date:"d/m/Y H:i" }} UTC<br>{% endtimezone %}
     </div>
     <div class="info-card">
         <strong>{{ calendar_data.month_name }} {{ calendar_data.year }}</strong>

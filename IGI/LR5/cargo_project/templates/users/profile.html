@@ -11,7 +11,8 @@
         <p><strong>Телефон:</strong> {{ p.phone }}</p>
         <p><strong>Дата рождения:</strong> {{ p.birth_date|date:"d/m/Y" }} ({{ p.age }} лет)</p>
         <p><strong>Таймзона:</strong> {{ p.timezone }}</p>
-        <p class="muted">Создано: {{ p.created_at|date:"d/m/Y H:i" }} (локально) / {{ p.created_at|date:"d/m/Y H:i" }} UTC</p>
+        {% load tz %}
+        <p class="muted">Создано: {{ p.created_at|localtime|date:"d/m/Y H:i" }} (локально) / {% timezone "UTC" %}{{ p.created_at|date:"d/m/Y H:i" }}{% endtimezone %} UTC</p>
     {% endwith %}
     <p>
         <a class="btn" href="{% url 'users:profile_update' %}">Редактировать профиль</a>
