@@ -23,4 +23,4 @@ RUN DJANGO_SECRET_KEY=build-dummy DJANGO_DEBUG=False python manage.py collectsta
 EXPOSE 8000
 
 # $PORT is provided by Railway/Render/Heroku; defaults to 8000 locally / in docker-compose.
-CMD ["sh", "-c", "python manage.py migrate --noinput ; python manage.py createsuperuser --noinput --skip-checks 2>/dev/null || true ; gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
+CMD ["sh", "-c", "python manage.py migrate --noinput ; python manage.py createsuperuser --noinput --skip-checks 2>/dev/null || true ; python manage.py shell -c \"from django.contrib.auth.models import User; exit(0 if User.objects.count() > 1 else 1)\" 2>/dev/null || python manage.py loaddata fixtures/initial_data.json --ignorenonexistent ; gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
