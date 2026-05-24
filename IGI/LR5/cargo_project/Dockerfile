@@ -20,4 +20,4 @@ RUN mkdir -p /app/logs /app/media /app/staticfiles
 EXPOSE 8000
 
 # $PORT is provided by Railway/Render/Heroku; defaults to 8000 locally / in docker-compose.
-CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 3 --timeout 60"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && (python manage.py collectstatic --noinput || true) && gunicorn cargo_project.wsgi:application --bind 0.0.0.0:${PORT:-8000} --workers 1 --timeout 120"]
