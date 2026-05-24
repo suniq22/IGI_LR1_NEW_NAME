@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Удаление{% endblock %}
+{% block content %}
+<h1>Подтверждение удаления</h1>
+<p>Вы действительно хотите удалить «<strong>{{ object }}</strong>»?</p>
+<form method="post" style="display:inline">
+    {% csrf_token %}
+    <button class="btn btn-danger" type="submit">Удалить</button>
+</form>
+<a class="btn btn-secondary" href="{{ cancel_url }}">Отмена</a>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Заказы{% endblock %}
+{% block content %}
+<h1>Заказы</h1>
+<a class="btn" href="{% url 'cargo:order_create' %}">+ Оформить заказ</a>
+
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="груз/статус...">
+    <select name="sort">
+        <option value="-scheduled_at" {% if sort == '-scheduled_at' %}selected{% endif %}>Дата ↓</option>
+        <option value="scheduled_at" {% if sort == 'scheduled_at' %}selected{% endif %}>Дата ↑</option>
+        <option value="status" {% if sort == 'status' %}selected{% endif %}>Статус A→Я</option>
+        <option value="-distance_km" {% if sort == '-distance_km' %}selected{% endif %}>Расст. ↓</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+<table>
+    <thead><tr><th>#</th><th>Груз</th><th>Вид</th><th>Клиент</th><th>Водитель</th><th>ТС</th><th>Расст., км</th><th>Статус</th><th>Дата</th><th>Сумма</th><th></th></tr></thead>
+    <tbody>
+        {% for o in orders %}
+            <tr>
+                <td>{{ o.pk }}</td>
+                <td>{{ o.cargo_name }}</td>
+                <td>{{ o.cargo_type.name }}</td>
+                <td>{{ o.client }}</td>
+                <td>{{ o.driver|default:"—" }}</td>
+                <td>{{ o.vehicle|default:"—" }}</td>
+                <td>{{ o.distance_km }}</td>
+                <td><span class="badge">{{ o.get_status_display }}</span></td>
+                <td>{{ o.scheduled_at|date:"d/m/Y H:i" }}</td>
+                <td>{{ o.total_price }} BYN</td>
+                <td>
+                    <a class="btn btn-secondary" href="{% url 'cargo:order_detail' o.pk %}">Подр.</a>
+                </td>
+            </tr>
+        {% empty %}
+            <tr><td colspan="11">Заказов нет.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

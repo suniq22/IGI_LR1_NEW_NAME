@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Личный кабинет{% endblock %}
+{% block content %}
+<h1>Личный кабинет</h1>
+<div class="card">
+    <p><strong>Логин:</strong> {{ user_obj.username }}</p>
+    <p><strong>ФИО:</strong> {{ user_obj.first_name }} {{ user_obj.last_name }}</p>
+    <p><strong>Email:</strong> {{ user_obj.email }}</p>
+    {% with p=user_obj.profile %}
+        <p><strong>Роль:</strong> {{ p.get_role_display }}</p>
+        <p><strong>Телефон:</strong> {{ p.phone }}</p>
+        <p><strong>Дата рождения:</strong> {{ p.birth_date|date:"d/m/Y" }} ({{ p.age }} лет)</p>
+        <p><strong>Таймзона:</strong> {{ p.timezone }}</p>
+        <p class="muted">Создано: {{ p.created_at|date:"d/m/Y H:i" }} (локально) / {{ p.created_at|date:"d/m/Y H:i" }} UTC</p>
+    {% endwith %}
+    <p>
+        <a class="btn" href="{% url 'users:profile_update' %}">Редактировать профиль</a>
+        {% if user.is_superuser %}<a class="btn btn-secondary" href="/admin/">Админ-панель</a>{% endif %}
+    </p>
+</div>
+
+{% if user.is_authenticated %}
+    <div class="card">
+        <h2>Доступные действия</h2>
+        <ul>
+            {% if user.is_superuser %}
+                <li><a href="{% url 'main:news_create' %}">Создать новость</a></li>
+                <li><a href="{% url 'cargo:service_create' %}">Добавить услугу</a></li>
+                <li><a href="{% url 'cargo:vehicle_create' %}">Добавить транспорт</a></li>
+                <li><a href="{% url 'main:vacancy_create' %}">Добавить вакансию</a></li>
+                <li><a href="{% url 'main:promocode_create' %}">Создать промокод</a></li>
+            {% endif %}
+            <li><a href="{% url 'cargo:orders_list' %}">Мои заказы</a></li>
+            {% if user.client_profile %}
+                <li><a href="{% url 'cargo:order_create' %}">Оформить новый заказ</a></li>
+            {% endif %}
+            <li><a href="{% url 'cargo:statistics' %}">Статистика</a></li>
+        </ul>
+    </div>
+{% endif %}
+{% endblock %}

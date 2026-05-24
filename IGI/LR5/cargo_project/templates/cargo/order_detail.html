@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Заказ #{{ order.pk }}{% endblock %}
+{% block content %}
+<h1>Заказ #{{ order.pk }} — {{ order.cargo_name }}</h1>
+<div class="card">
+    <p><strong>Вид груза:</strong> {{ order.cargo_type.name }}</p>
+    <p><strong>Клиент:</strong> {{ order.client }}</p>
+    <p><strong>Водитель:</strong> {{ order.driver|default:"—" }}</p>
+    <p><strong>Транспорт:</strong> {{ order.vehicle|default:"—" }}</p>
+    <p><strong>Расстояние:</strong> {{ order.distance_km }} км</p>
+    <p><strong>Вес:</strong> {{ order.weight_tons }} т</p>
+    <p><strong>Услуги:</strong>
+        {% for s in order.services.all %}<span class="badge">{{ s.name }}</span> {% empty %}—{% endfor %}
+    </p>
+    <p><strong>Промокод:</strong> {{ order.promo_code|default:"—" }}</p>
+    <p><strong>Статус:</strong> <span class="badge">{{ order.get_status_display }}</span></p>
+    <p><strong>Запланирован:</strong> {{ order.scheduled_at|date:"d/m/Y H:i" }} (локально)</p>
+    <p><strong>UTC:</strong> {{ order.scheduled_at|date:"d/m/Y H:i" }} UTC</p>
+    <p><strong>Создан:</strong> {{ order.created_at|date:"d/m/Y H:i" }}</p>
+    <p><strong>Стоимость:</strong> {{ order.total_price }} BYN</p>
+</div>
+
+<a class="btn btn-secondary" href="{% url 'cargo:orders_list' %}">← К списку</a>
+{% if user.is_superuser or order.client.user == user %}
+    <a class="btn" href="{% url 'cargo:order_update' order.pk %}">Изменить</a>
+    <a class="btn btn-danger" href="{% url 'cargo:order_delete' order.pk %}">Удалить</a>
+{% endif %}
+{% endblock %}

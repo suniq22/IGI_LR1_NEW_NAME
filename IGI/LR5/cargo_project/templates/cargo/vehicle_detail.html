@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}{{ v.brand }} {{ v.model }}{% endblock %}
+{% block content %}
+<h1>{{ v.brand }} {{ v.model }} ({{ v.plate_number }})</h1>
+<div class="card">
+    <p><strong>Тип:</strong> {{ v.vehicle_type.name }}</p>
+    <p><strong>Кузов:</strong> {{ v.body_type.name }}</p>
+    <p><strong>Грузоподъёмность:</strong> {{ v.capacity_tons }} т</p>
+    <p><strong>Год выпуска:</strong> {{ v.year }}</p>
+    <p><strong>Водитель:</strong> {{ v.driver|default:"не назначен" }}</p>
+</div>
+<a class="btn btn-secondary" href="{% url 'cargo:vehicles_list' %}">← К списку</a>
+{% if user.is_superuser %}
+    <a class="btn" href="{% url 'cargo:vehicle_update' v.pk %}">Изменить</a>
+    <a class="btn btn-danger" href="{% url 'cargo:vehicle_delete' v.pk %}">Удалить</a>
+{% endif %}
+{% endblock %}

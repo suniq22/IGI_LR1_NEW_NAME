@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ item.title }}{% endblock %}
+{% block content %}
+<h1>{{ item.title }}</h1>
+<img class="thumb" src="{% if item.image %}{{ item.image.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ item.title }}">
+<p class="muted">Опубликовано: {{ item.published_at|date:"d/m/Y H:i" }}
+{% if item.author %} | Автор: {{ item.author.username }}{% endif %}</p>
+<p><strong>{{ item.summary }}</strong></p>
+<div>{{ item.content|linebreaks }}</div>
+
+<p><a class="btn btn-secondary" href="{% url 'main:news_list' %}">← К новостям</a>
+{% if user.is_superuser %}
+    <a class="btn" href="{% url 'main:news_update' item.pk %}">Изменить</a>
+    <a class="btn btn-danger" href="{% url 'main:news_delete' item.pk %}">Удалить</a>
+{% endif %}
+</p>
+{% endblock %}

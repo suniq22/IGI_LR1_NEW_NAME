@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Контакты — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Контакты</h1>
+{% for c in contacts %}
+    <div class="card">
+        <img class="thumb" src="{% if c.photo %}{{ c.photo.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ c.full_name }}">
+        <h3>{{ c.full_name }} — {{ c.position }}</h3>
+        <p>{{ c.description }}</p>
+        <p><strong>Тел.:</strong> {{ c.phone }} | <strong>Email:</strong> {{ c.email }}</p>
+    </div>
+{% empty %}
+    <p>Контакты ещё не добавлены.</p>
+{% endfor %}
+{% endblock %}

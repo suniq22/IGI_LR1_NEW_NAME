@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Новости — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Новости</h1>
+
+{% if user.is_superuser %}
+    <p><a class="btn" href="{% url 'main:news_create' %}">+ Новая новость</a></p>
+{% endif %}
+
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="Поиск по заголовку/описанию...">
+    <select name="sort">
+        <option value="-published_at" {% if sort == '-published_at' %}selected{% endif %}>Сначала новые</option>
+        <option value="published_at" {% if sort == 'published_at' %}selected{% endif %}>Сначала старые</option>
+        <option value="title" {% if sort == 'title' %}selected{% endif %}>Заголовок A→Я</option>
+        <option value="-title" {% if sort == '-title' %}selected{% endif %}>Заголовок Я→A</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+{% for n in news_items %}
+    <div class="card">
+        <img class="thumb" src="{% if n.image %}{{ n.image.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ n.title }}">
+        <h3>{{ n.title }}</h3>
+        <p>{{ n.summary }}</p>
+        <p class="muted">{{ n.published_at|date:"d/m/Y H:i" }}</p>
+        <a class="btn" href="{% url 'main:news_detail' n.pk %}">Читать далее</a>
+        {% if user.is_superuser %}
+            <a class="btn btn-secondary" href="{% url 'main:news_update' n.pk %}">Изменить</a>
+            <a class="btn btn-danger" href="{% url 'main:news_delete' n.pk %}">Удалить</a>
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Новостей пока нет.</p>
+{% endfor %}
+{% endblock %}

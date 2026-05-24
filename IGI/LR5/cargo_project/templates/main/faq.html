@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Словарь терминов — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Словарь терминов и FAQ</h1>
+
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="Поиск по вопросу/ответу...">
+    <select name="sort">
+        <option value="-added_at" {% if sort == '-added_at' %}selected{% endif %}>Сначала новые</option>
+        <option value="added_at" {% if sort == 'added_at' %}selected{% endif %}>Сначала старые</option>
+        <option value="question" {% if sort == 'question' %}selected{% endif %}>Вопрос (A→Я)</option>
+        <option value="-question" {% if sort == '-question' %}selected{% endif %}>Вопрос (Я→A)</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+{% for faq in faqs %}
+    <div class="card">
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+        <p class="muted">Добавлено: {{ faq.added_at|date:"d/m/Y" }}</p>
+    </div>
+{% empty %}
+    <p>Записей не найдено.</p>
+{% endfor %}
+{% endblock %}
