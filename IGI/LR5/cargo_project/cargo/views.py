@@ -178,11 +178,10 @@ def vehicle_delete(request, pk):
 def driver_create(request):
     form = DriverForm(request.POST or None)
     if request.method == 'POST' and form.is_valid():
-        # NB: driver without user is unusual — leave the user attach to admin
-        return render(request, 'cargo/driver_form.html', {
-            'form': form, 'mode': 'create',
-            'errors': 'Создание водителя возможно только из админ-панели (нужен User).',
-        })
+        driver = form.save()
+        logger.info('Driver created: %s by %s', driver, request.user)
+        messages.success(request, f'Водитель {driver} создан')
+        return redirect('cargo:drivers_list')
     return render(request, 'cargo/driver_form.html', {'form': form, 'mode': 'create'})
 
 

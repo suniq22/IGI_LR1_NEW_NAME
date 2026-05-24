@@ -1,10 +1,13 @@
 """Forms for cargo domain: orders, drivers, vehicles, services."""
 from django import forms
+from django.contrib.auth import get_user_model
 
 from .models import (
     BodyType, CargoType, Client, Driver, Order, Organization, Service,
     Vehicle, VehicleType,
 )
+
+User = get_user_model()
 
 
 class OrderForm(forms.ModelForm):
@@ -74,9 +77,15 @@ class VehicleForm(forms.ModelForm):
 
 
 class DriverForm(forms.ModelForm):
+    user = forms.ModelChoiceField(
+        queryset=User.objects.filter(driver_profile__isnull=True),
+        label='Учётная запись пользователя',
+        help_text='Выберите пользователя без профиля водителя',
+    )
+
     class Meta:
         model = Driver
-        fields = ['first_name', 'last_name', 'birth_date', 'phone',
+        fields = ['user', 'first_name', 'last_name', 'birth_date', 'phone',
                   'license_number', 'hired_at']
         widgets = {
             'birth_date': forms.DateInput(attrs={'type': 'date'}),
