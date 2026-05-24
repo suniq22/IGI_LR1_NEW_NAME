@@ -10,7 +10,7 @@ from django.conf import settings
 logger = logging.getLogger('main')
 
 
-def fetch_random_quote(timeout: float = 5.0) -> Dict[str, Any]:
+def fetch_random_quote(timeout: float = 2.0) -> Dict[str, Any]:
     """Fetch a random motivational quote (quotable.io)."""
     try:
         resp = requests.get(settings.QUOTABLE_API, timeout=timeout, verify=False)
@@ -29,7 +29,7 @@ def fetch_random_quote(timeout: float = 5.0) -> Dict[str, Any]:
         }
 
 
-def fetch_currency_rates(timeout: float = 5.0) -> Dict[str, Any]:
+def fetch_currency_rates(timeout: float = 2.0) -> Dict[str, Any]:
     """USD-based currency rates (open.er-api.com)."""
     try:
         resp = requests.get(settings.EXCHANGE_API, timeout=timeout)
