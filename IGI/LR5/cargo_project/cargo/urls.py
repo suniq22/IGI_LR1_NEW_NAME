@@ -15,6 +15,7 @@ urlpatterns = [
 
     # Drivers
     re_path(r'^drivers/$', views.drivers_list, name='drivers_list'),
+    re_path(r'^drivers/create/$', views.driver_create, name='driver_create'),
     re_path(r'^drivers/(?P<pk>\d+)/edit/$', views.driver_update, name='driver_update'),
     re_path(r'^drivers/(?P<pk>\d+)/delete/$', views.driver_delete, name='driver_delete'),
 
