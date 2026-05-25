@@ -59,7 +59,7 @@
 <aside class="sidebar container">
     <div class="info-card">
         <strong>Таймзона:</strong> {{ user_timezone }}<br>
-        <strong>Локально:</strong> {{ now_local|localtime|date:"d/m/Y H:i" }}<br>
+        <strong>Локально:</strong> {{ now_local|date:"d/m/Y H:i" }}<br>
         {% timezone "UTC" %}<strong>UTC:</strong> {{ now_utc|date:"d/m/Y H:i" }} UTC<br>{% endtimezone %}
     </div>
     <div class="info-card">
