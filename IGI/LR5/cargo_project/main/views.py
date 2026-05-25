@@ -7,7 +7,7 @@ from django.http import HttpResponseForbidden
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
-from .forms import FAQForm, NewsForm, PromoCodeForm, ReviewForm, VacancyForm
+from .forms import ContactForm, FAQForm, NewsForm, PromoCodeForm, ReviewForm, VacancyForm
 from .models import (
     CompanyInfo, Contact, FAQ, News, PromoCode, Review, Vacancy,
 )
@@ -47,6 +47,39 @@ def privacy(request):
 def contacts_list(request):
     contacts = Contact.objects.all()
     return render(request, 'main/contacts.html', {'contacts': contacts})
+
+
+@user_passes_test(_is_superuser)
+def contact_create(request):
+    form = ContactForm(request.POST or None, request.FILES or None)
+    if request.method == 'POST' and form.is_valid():
+        form.save()
+        messages.success(request, 'Контакт добавлен')
+        return redirect('main:contacts')
+    return render(request, 'main/contact_form.html', {'form': form, 'mode': 'create'})
+
+
+@user_passes_test(_is_superuser)
+def contact_update(request, pk):
+    item = get_object_or_404(Contact, pk=pk)
+    form = ContactForm(request.POST or None, request.FILES or None, instance=item)
+    if request.method == 'POST' and form.is_valid():
+        form.save()
+        messages.success(request, 'Контакт обновлён')
+        return redirect('main:contacts')
+    return render(request, 'main/contact_form.html', {'form': form, 'mode': 'update', 'item': item})
+
+
+@user_passes_test(_is_superuser)
+def contact_delete(request, pk):
+    item = get_object_or_404(Contact, pk=pk)
+    if request.method == 'POST':
+        item.delete()
+        messages.success(request, 'Контакт удалён')
+        return redirect('main:contacts')
+    return render(request, 'main/confirm_delete.html', {
+        'object': item, 'cancel_url': reverse('main:contacts'),
+    })
 
 
 def faq_list(request):

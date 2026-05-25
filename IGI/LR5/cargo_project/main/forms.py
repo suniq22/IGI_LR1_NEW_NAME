@@ -1,7 +1,16 @@
 """Forms for the main app: review submission, news CRUD, promo CRUD, etc."""
 from django import forms
 
-from .models import FAQ, News, PromoCode, Review, Vacancy
+from .models import Contact, FAQ, News, PromoCode, Review, Vacancy
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ['full_name', 'position', 'description', 'phone', 'email', 'photo']
+        widgets = {
+            'description': forms.Textarea(attrs={'rows': 3}),
+        }
 
 
 class FAQForm(forms.ModelForm):
