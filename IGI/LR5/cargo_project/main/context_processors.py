@@ -1,8 +1,8 @@
 """Add globally-visible fields to every template context."""
 import calendar
-from datetime import date, datetime
+import time
+from datetime import datetime, timezone as dt_timezone
 
-import pytz
 from django.conf import settings
 
 _RU_MONTHS = [
@@ -34,21 +34,10 @@ def _build_calendar_data(year: int, month: int, today_day: int):
 
 def site_context(request):
     """Expose timezone info, current time and a calendar data dict to templates."""
-    user_tz = None
-    if request.user.is_authenticated:
-        profile = getattr(request.user, 'profile', None)
-        if profile:
-            user_tz = profile.timezone
-    if not user_tz:
-        user_tz = request.session.get('django_timezone') or 'Europe/Minsk'
-
-    try:
-        tz = pytz.timezone(user_tz)
-    except Exception:  # noqa: BLE001
-        tz = pytz.timezone('Europe/Minsk')
-
-    now_utc = datetime.now(pytz.UTC)
-    now_local = now_utc.astimezone(tz)
+    # Используем встроенные функции Python для получения таймзоны сервера
+    now_utc = datetime.now(dt_timezone.utc)   # текущее время UTC
+    now_local = datetime.now().astimezone()   # локальное время сервера
+    server_tz = time.strftime('%Z')           # название таймзоны сервера ('UTC', 'MSK' и т.д.)
 
     calendar_data = _build_calendar_data(
         now_local.year, now_local.month, now_local.day
@@ -56,7 +45,7 @@ def site_context(request):
 
     return {
         'site_company_name': getattr(settings, 'COMPANY_NAME', 'CargoGo'),
-        'user_timezone': user_tz,
+        'user_timezone': server_tz,
         'now_utc': now_utc,
         'now_local': now_local,
         'calendar_data': calendar_data,

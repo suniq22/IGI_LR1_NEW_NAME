@@ -32,13 +32,6 @@ class SignUpForm(UserCreationForm):
         required=True,
         label='Роль',
     )
-    timezone = forms.ChoiceField(
-        choices=UserProfile.TIMEZONE_CHOICES,
-        required=True,
-        initial='Europe/Minsk',
-        label='Часовой пояс',
-    )
-
     class Meta:
         model = User
         fields = (
@@ -68,7 +61,7 @@ class SignUpForm(UserCreationForm):
                 role=self.cleaned_data['role'],
                 phone=self.cleaned_data['phone'],
                 birth_date=self.cleaned_data['birth_date'],
-                timezone=self.cleaned_data['timezone'],
+                timezone='Europe/Minsk',  # overwritten in view after IP detection
             )
         return user
 

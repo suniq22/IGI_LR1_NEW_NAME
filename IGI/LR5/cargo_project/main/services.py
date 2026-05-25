@@ -54,6 +54,7 @@ def fetch_currency_rates(timeout: float = 2.0) -> Dict[str, Any]:
         }
 
 
+
 def render_chart_png_base64(labels, values, title='', ylabel='') -> str:
     """Render a bar chart with matplotlib and return base64 PNG."""
     import matplotlib
