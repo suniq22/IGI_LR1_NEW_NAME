@@ -313,7 +313,7 @@ def order_delete(request, pk):
 
 # --- Statistics & chart -----------------------------------------------------
 
-@login_required
+@user_passes_test(_is_superuser)
 def statistics_view(request):
     """Aggregate statistics: averages, popular cargo type, total revenue, chart."""
     orders = list(Order.objects.select_related('cargo_type').prefetch_related('services').all())
