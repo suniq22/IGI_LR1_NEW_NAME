@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load tz %}
 {% block title %}Заказ #{{ order.pk }}{% endblock %}
 {% block content %}
 <h1>Заказ #{{ order.pk }} — {{ order.cargo_name }}</h1>
@@ -14,9 +15,9 @@
     </p>
     <p><strong>Промокод:</strong> {{ order.promo_code|default:"—" }}</p>
     <p><strong>Статус:</strong> <span class="badge">{{ order.get_status_display }}</span></p>
-    <p><strong>Запланирован:</strong> {{ order.scheduled_at|date:"d/m/Y H:i" }} (локально)</p>
-    <p><strong>UTC:</strong> {{ order.scheduled_at|date:"d/m/Y H:i" }} UTC</p>
-    <p><strong>Создан:</strong> {{ order.created_at|date:"d/m/Y H:i" }}</p>
+    <p><strong>Запланирован:</strong> {{ order.scheduled_at|localtime|date:"d/m/Y H:i" }} (локально)</p>
+    {% timezone "UTC" %}<p><strong>UTC:</strong> {{ order.scheduled_at|date:"d/m/Y H:i" }} UTC</p>{% endtimezone %}
+    <p><strong>Создан:</strong> {{ order.created_at|localtime|date:"d/m/Y H:i" }}</p>
     <p><strong>Стоимость:</strong> {{ order.total_price }} BYN</p>
 </div>
 
