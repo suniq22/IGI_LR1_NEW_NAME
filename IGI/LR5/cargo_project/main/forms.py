@@ -1,7 +1,17 @@
 """Forms for the main app: review submission, news CRUD, promo CRUD, etc."""
 from django import forms
 
-from .models import News, PromoCode, Review, Vacancy
+from .models import FAQ, News, PromoCode, Review, Vacancy
+
+
+class FAQForm(forms.ModelForm):
+    class Meta:
+        model = FAQ
+        fields = ['question', 'answer', 'added_at']
+        widgets = {
+            'answer': forms.Textarea(attrs={'rows': 4}),
+            'added_at': forms.DateInput(attrs={'type': 'date'}),
+        }
 
 
 class ReviewForm(forms.ModelForm):

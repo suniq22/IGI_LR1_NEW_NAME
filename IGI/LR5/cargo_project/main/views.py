@@ -7,7 +7,7 @@ from django.http import HttpResponseForbidden
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
-from .forms import NewsForm, PromoCodeForm, ReviewForm, VacancyForm
+from .forms import FAQForm, NewsForm, PromoCodeForm, ReviewForm, VacancyForm
 from .models import (
     CompanyInfo, Contact, FAQ, News, PromoCode, Review, Vacancy,
 )
@@ -58,6 +58,39 @@ def faq_list(request):
     if sort in ('question', '-question', 'added_at', '-added_at'):
         qs = qs.order_by(sort)
     return render(request, 'main/faq.html', {'faqs': qs, 'q': q, 'sort': sort})
+
+
+@user_passes_test(_is_superuser)
+def faq_create(request):
+    form = FAQForm(request.POST or None)
+    if request.method == 'POST' and form.is_valid():
+        form.save()
+        messages.success(request, 'Термин добавлен')
+        return redirect('main:faq')
+    return render(request, 'main/faq_form.html', {'form': form, 'mode': 'create'})
+
+
+@user_passes_test(_is_superuser)
+def faq_update(request, pk):
+    item = get_object_or_404(FAQ, pk=pk)
+    form = FAQForm(request.POST or None, instance=item)
+    if request.method == 'POST' and form.is_valid():
+        form.save()
+        messages.success(request, 'Термин обновлён')
+        return redirect('main:faq')
+    return render(request, 'main/faq_form.html', {'form': form, 'mode': 'update', 'item': item})
+
+
+@user_passes_test(_is_superuser)
+def faq_delete(request, pk):
+    item = get_object_or_404(FAQ, pk=pk)
+    if request.method == 'POST':
+        item.delete()
+        messages.success(request, 'Термин удалён')
+        return redirect('main:faq')
+    return render(request, 'main/confirm_delete.html', {
+        'object': item, 'cancel_url': reverse('main:faq'),
+    })
 
 
 # --- News CRUD --------------------------------------------------------------

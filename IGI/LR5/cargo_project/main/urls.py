@@ -11,6 +11,9 @@ urlpatterns = [
     re_path(r'^privacy/$', views.privacy, name='privacy'),
     re_path(r'^contacts/$', views.contacts_list, name='contacts'),
     re_path(r'^faq/$', views.faq_list, name='faq'),
+    re_path(r'^faq/create/$', views.faq_create, name='faq_create'),
+    re_path(r'^faq/(?P<pk>\d+)/edit/$', views.faq_update, name='faq_update'),
+    re_path(r'^faq/(?P<pk>\d+)/delete/$', views.faq_delete, name='faq_delete'),
 
     # News
     re_path(r'^news/$', views.news_list, name='news_list'),
