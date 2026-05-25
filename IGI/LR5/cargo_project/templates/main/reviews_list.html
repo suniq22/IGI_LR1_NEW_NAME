@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load tz %}
 {% block title %}Отзывы — {{ site_company_name }}{% endblock %}
 {% block content %}
 <h1>Отзывы</h1>
@@ -23,7 +24,7 @@
 {% for r in reviews %}
     <div class="card">
         <strong>{{ r.author.username }}</strong> — оценка: {{ r.rating }}/5
-        <span class="muted"> | {{ r.created_at|date:"d/m/Y H:i" }}</span>
+        <span class="muted"> | {{ r.created_at|localtime|date:"d/m/Y H:i" }} (локально) | {% timezone "UTC" %}{{ r.created_at|date:"d/m/Y H:i" }}{% endtimezone %} UTC</span>
         <p>{{ r.text }}</p>
         {% if user.is_authenticated and user == r.author or user.is_superuser %}
             <a class="btn btn-secondary" href="{% url 'main:review_update' r.pk %}">Изменить</a>

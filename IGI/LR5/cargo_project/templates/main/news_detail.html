@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static tz %}
 {% block title %}{{ item.title }}{% endblock %}
 {% block content %}
 <h1>{{ item.title }}</h1>
 <img class="thumb" src="{% if item.image %}{{ item.image.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ item.title }}">
-<p class="muted">Опубликовано: {{ item.published_at|date:"d/m/Y H:i" }}
-{% if item.author %} | Автор: {{ item.author.username }}{% endif %}</p>
+<p class="muted">
+    Опубликовано: {{ item.published_at|localtime|date:"d/m/Y H:i" }} (локально) |
+    {% timezone "UTC" %}{{ item.published_at|date:"d/m/Y H:i" }}{% endtimezone %} UTC
+    {% if item.author %} | Автор: {{ item.author.username }}{% endif %}
+</p>
 <p><strong>{{ item.summary }}</strong></p>
 <div>{{ item.content|linebreaks }}</div>
 
