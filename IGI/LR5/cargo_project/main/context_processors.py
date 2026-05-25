@@ -36,7 +36,7 @@ def site_context(request):
     """Expose timezone info, current time and a calendar data dict to templates."""
     # Используем встроенные функции Python для получения таймзоны сервера
     now_utc = datetime.now(dt_timezone.utc)   # текущее время UTC
-    now_local = datetime.now().astimezone()   # локальное время сервера
+    now_local = datetime.now()                # локальное время сервера (naive — без tzinfo)
     server_tz = time.strftime('%Z')           # название таймзоны сервера ('UTC', 'MSK' и т.д.)
 
     calendar_data = _build_calendar_data(
