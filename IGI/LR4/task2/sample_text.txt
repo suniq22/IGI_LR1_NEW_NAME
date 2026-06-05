@@ -1,0 +1,15 @@
+Hello, world! This is a sample text for analysis. Do you like programming?
+Python is a great language; it has many powerful libraries. The quick brown fox jumps over the lazy dog.
+What is your favorite programming language? I prefer Python! Sometimes coding can be tricky, but it is rewarding.
+Network devices use MAC addresses for identification. For example, aE:dC:cA:56:76:54 is a valid MAC address.
+However, 01:23:45:67:89:Az is NOT a valid MAC address because 'z' is not a hexadecimal digit.
+Smileys make text more expressive: :) ;-) :-( ;--[[ :---))) are fun examples!
+But these sequences are NOT smileys: ], ;--, :, ).
+The weather today is amazing! Can you believe it? Temperature is 25 degrees Celsius.
+Students enjoy learning new things. Teachers help them understand difficult concepts.
+Is Python better than Java? Many developers think so! Both languages have their strengths.
+Be careful with network security; always validate input data. Never trust user input!
+The matrix A[n,m] contains random integer values. Sorting the last row gives interesting results.
+Regular expressions are powerful tools for text processing. They can match complex patterns easily.
+How many words are in this sentence? Let us count them carefully.
+Programming is fun, creative, and intellectually stimulating. Do not be afraid to make mistakes!
