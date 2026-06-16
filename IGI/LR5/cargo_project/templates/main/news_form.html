@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{% if mode == 'create' %}Новая новость{% else %}Редактирование новости{% endif %}{% endblock %}
+{% block content %}
+<h1>{% if mode == 'create' %}Новая новость{% else %}Редактирование новости{% endif %}</h1>
+<form method="post" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
+    {% for f in form %}
+        <div class="field">
+            {{ f.label_tag }}
+            {{ f }}
+            {{ f.errors }}
+            {% if f.help_text %}<div class="muted">{{ f.help_text }}</div>{% endif %}
+        </div>
+    {% endfor %}
+    <button class="btn" type="submit">Сохранить</button>
+    <a class="btn btn-secondary" href="{% url 'main:news_list' %}">Отмена</a>
+</form>
+{% endblock %}

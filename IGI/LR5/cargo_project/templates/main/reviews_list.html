@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load tz %}
+{% block title %}Отзывы — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Отзывы</h1>
+
+{% if user.is_authenticated %}
+    <a class="btn" href="{% url 'main:review_create' %}">+ Оставить отзыв</a>
+{% else %}
+    <p><a class="btn" href="{% url 'users:login' %}?next={% url 'main:review_create' %}">Войдите</a>, чтобы оставить отзыв</p>
+{% endif %}
+
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="Поиск по тексту/автору...">
+    <select name="sort">
+        <option value="-created_at" {% if sort == '-created_at' %}selected{% endif %}>Сначала новые</option>
+        <option value="created_at" {% if sort == 'created_at' %}selected{% endif %}>Сначала старые</option>
+        <option value="-rating" {% if sort == '-rating' %}selected{% endif %}>Сначала высокие оценки</option>
+        <option value="rating" {% if sort == 'rating' %}selected{% endif %}>Сначала низкие</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+{% for r in reviews %}
+    <div class="card">
+        <strong>{{ r.author.username }}</strong> — оценка: {{ r.rating }}/5
+        <span class="muted"> | {{ r.created_at|localtime|date:"d/m/Y H:i" }} (локально) | {% timezone "UTC" %}{{ r.created_at|date:"d/m/Y H:i" }}{% endtimezone %} UTC</span>
+        <p>{{ r.text }}</p>
+        {% if user.is_authenticated and user == r.author or user.is_superuser %}
+            <a class="btn btn-secondary" href="{% url 'main:review_update' r.pk %}">Изменить</a>
+            <a class="btn btn-danger" href="{% url 'main:review_delete' r.pk %}">Удалить</a>
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Отзывов пока нет.</p>
+{% endfor %}
+{% endblock %}

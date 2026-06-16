@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Главная — {{ site_company_name }}{% endblock %}
+
+{% block content %}
+<h1>Добро пожаловать в {{ site_company_name }}</h1>
+<p class="muted">Грузоперевозки автотранспортом — быстро, надёжно, доступно.</p>
+
+<section class="card">
+    <h2>Последняя новость</h2>
+    {% if latest_news %}
+        <img class="thumb" src="{% if latest_news.image %}{{ latest_news.image.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ latest_news.title }}">
+        <h3>{{ latest_news.title }}</h3>
+        <p>{{ latest_news.summary }}</p>
+        <p class="muted">Опубликовано: {{ latest_news.published_at|date:"d/m/Y H:i" }}</p>
+        <a class="btn" href="{% url 'main:news_detail' latest_news.pk %}">Читать далее</a>
+    {% else %}
+        <p>Новостей пока нет.</p>
+    {% endif %}
+</section>
+
+<section class="card">
+    <h2>Цитата дня (внешний API: quotable.io)</h2>
+    <blockquote>«{{ quote.content }}»<br><em>— {{ quote.author }}</em></blockquote>
+</section>
+
+<section class="card">
+    <h2>Курсы валют к {{ rates.base }} (внешний API: open.er-api.com)</h2>
+    {% if rates.updated %}<p class="muted">Обновлено: {{ rates.updated }}</p>{% endif %}
+    <table>
+        <thead><tr><th>Валюта</th><th>Курс</th></tr></thead>
+        <tbody>
+            {% for code, value in rates.rates.items %}
+                <tr><td>{{ code }}</td><td>{{ value }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}

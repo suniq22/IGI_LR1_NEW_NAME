@@ -1,0 +1,2758 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$J3qN96AUt4rJXFSBNwjArk$kM29AA4BGk2QtURMq5vPRWcqFKP5zhRZvVNcKyKLJBc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver1",
+    "first_name": "Иван",
+    "last_name": "Иванов",
+    "email": "driver1@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:08.202Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$af1cs5UMncLXy6EqepbCMd$lBQu6jNgDCjA8sm4+Sh/842Gbe1eB30EijR6CeJO/WE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver2",
+    "first_name": "Пётр",
+    "last_name": "Петров",
+    "email": "driver2@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:08.440Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$J98pFum6VEHJYKKcGt83cz$ZeoAcz21lpshuAWEnCw6EntYfsOaQRLN3dQMC1zvYDo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver3",
+    "first_name": "Андрей",
+    "last_name": "Сидоров",
+    "email": "driver3@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:08.675Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XAyJDkfC9Gw1FI203vNzJy$0TRyx8f4fFyfqNQAkIlk8o2biqFIZfUYs2UcKbTR2Sg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver4",
+    "first_name": "Сергей",
+    "last_name": "Кузнецов",
+    "email": "driver4@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:08.912Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$3W4Lx17LxlpepSUSqjc0yo$pgmyDPBzfYgJZI01eRPcXHgNBqCbrFSByYFAtrS4+7M=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver5",
+    "first_name": "Дмитрий",
+    "last_name": "Смирнов",
+    "email": "driver5@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:09.148Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$e1ABTyOXJ0e3v5emoINlFH$TbQMMOqsKFkHhdVNp3NkK2ImUPTyJLz2l+7KnIEt2m0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver6",
+    "first_name": "Алексей",
+    "last_name": "Соколов",
+    "email": "driver6@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:09.384Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Np96ZVBK4V3g0ZpJS012RX$6LSJ1BMMKm4a+NUIlZy+35JgEVHwZmP8GXKdJaEmJns=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver7",
+    "first_name": "Михаил",
+    "last_name": "Попов",
+    "email": "driver7@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:09.620Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$W9nGmvXXcnDml7PIudEGoR$RyYdQo1NG3HYh1dNVIFKYFJfFxn0jodBKqZzTwE/C7s=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver8",
+    "first_name": "Николай",
+    "last_name": "Лебедев",
+    "email": "driver8@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:09.857Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$qEMNnw9dZWArFDni4Y0RKm$WceAPvLnViMi3YynUVW3eFzvO/l6t71GDAs2AnPWxBY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver9",
+    "first_name": "Виктор",
+    "last_name": "Козлов",
+    "email": "driver9@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:10.093Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$1H62PMFlN5PsQIQ2qBBqAI$k+ttCCU3ZNzmgdWyOCKGJrTj7Wo3qbP9mXzQlfplGDo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "driver10",
+    "first_name": "Олег",
+    "last_name": "Новиков",
+    "email": "driver10@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:10.331Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$fj0sFNxrdPFuxmNCOHScpl$3BAozUiTUgkZeC8acI7UQ9a8ov4edw6Tii6GG8k4M14=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client1",
+    "first_name": "Анна",
+    "last_name": "Смирнова",
+    "email": "client1@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:10.575Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$9HlS7i4seGGp6YkURHF9wg$4Wz1Y5VyRYrgsAPVv1u/RdF5yN7T36wceKlhtIYQZLE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client2",
+    "first_name": "Мария",
+    "last_name": "Иванова",
+    "email": "client2@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:10.816Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Utijzt966ahEGE54xVjnmy$NXc7vDS+2I4MfGLR88s0iWGJGZQKfjEo2LVV1sEMwhE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client3",
+    "first_name": "Светлана",
+    "last_name": "Кузнецова",
+    "email": "client3@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:11.054Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$rCzrN2YNV0MERgjUe4JUbG$GoVRzuHNjQkf8H76+W8rPaNBjGPz5IJpfOn5X18U87k=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client4",
+    "first_name": "Ольга",
+    "last_name": "Попова",
+    "email": "client4@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:11.294Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$MTyklmzKtxfNRoRyTHGXl4$4qll/of7I+maHOVxQ3wfqWD0tWyJ75a7fZxTVU6Z/+Q=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client5",
+    "first_name": "Татьяна",
+    "last_name": "Соколова",
+    "email": "client5@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:11.532Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$g8Cr0aGHcO9JOVj5nY8yr9$kf95Ixoawhrs4E/YYbfi1/mOqYT6j7mvG/JIx554XM0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client6",
+    "first_name": "Елена",
+    "last_name": "Лебедева",
+    "email": "client6@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:11.771Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$8seOA9MMZqLBUAuiQHg0e6$Zk+74fN05cQDcY75gqhKF1N2nFlCBhP6hHyNyA7KHv0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client7",
+    "first_name": "Наталья",
+    "last_name": "Козлова",
+    "email": "client7@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:12.013Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$OWzipwkYsBc329yYnCQiIE$RHd97SO3Asbdj047WgmDqM9Y2XoBwU+GKKN2YVCPYqQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client8",
+    "first_name": "Юлия",
+    "last_name": "Новикова",
+    "email": "client8@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:12.253Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$pnzpOLogTwAoJ4IRaCWMyU$JXewRPh7joiIVnG844mMsUuQu/HPWdUcSAmKDzxTFss=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client9",
+    "first_name": "Дарья",
+    "last_name": "Морозова",
+    "email": "client9@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:12.491Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$HYzXKRK9Frr1VZUbboGCdB$QuigY5wyX083gMzU8S4tFu4UDJD6xUzJu3sqhzvhwEc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client10",
+    "first_name": "Алина",
+    "last_name": "Петрова",
+    "email": "client10@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:12.730Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$e1nXs5KbZNWtaqZeebMgUI$qtvVoS2PadRJ4LJq6vUXd45TTS+rm28cwMbJ7nmFVaE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "client11",
+    "first_name": "Карина",
+    "last_name": "Волкова",
+    "email": "client11@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:07:12.969Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$kSW7mLfHYRDQriYPZ7IiyX$31PTq7jgTxycXf1wYb94HaICy0UHkwlwXHgkLBVLE3g=",
+    "last_login": "2026-05-24T18:48:32.070Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@cargo.example",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-24T18:15:35.304Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b9ing9di242hencn2o14qxqukz91wog2",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln2Jv5R0nMGaze7wgFkS3FSIe4OkVJA-2bmvVTGbS1567LkmdVZAajT70g4PaTuhO9Yb01Pra7LTHpX9EG7vjaW5-Vw_w4K9vKtkyMvJg0sniwjBWdFRg4uoJiIGGGQYQQGMuBciGx9CuASIxIGJvX-ABHTOGE:1wRDsG:xw5q42uDZFTR3gPBPXUO40xdjxKQJEdlkj2OwU2h7Bc",
+    "expire_date": "2026-06-07T18:48:32.070Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mxznx2hsj1r2mhgasg7z3tvmcjgnvbe0",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8SgGX7v0GMswMUjU0Ke3K-O_apAvd3nPOfYkE21rT1nlJE4mzMEacfscM-OC2E7pDu80S57YuU5a7Ig_a5XUmfl4O9--gQq_fmskgDjaWEvXoSGnvVYlKsbKeUAUKQ3Y-j1h0YQ46O0LnwVlgsL6AeH8AEqw4xg:1wRDTD:Zxh579XRayxyR0A8TFuHyF-6LbLfbuZoARM-5qFkoto",
+    "expire_date": "2026-06-07T18:22:39.720Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "driver1"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 120-20-20",
+    "birth_date": "1990-01-01",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:08.439Z",
+    "updated_at": "2026-05-24T18:07:08.439Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "driver2"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 121-21-21",
+    "birth_date": "1989-02-02",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:08.674Z",
+    "updated_at": "2026-05-24T18:07:08.674Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "driver3"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 122-22-22",
+    "birth_date": "1988-03-03",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:08.911Z",
+    "updated_at": "2026-05-24T18:07:08.911Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "driver4"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 123-23-23",
+    "birth_date": "1987-04-04",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:09.147Z",
+    "updated_at": "2026-05-24T18:07:09.147Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "driver5"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 124-24-24",
+    "birth_date": "1986-05-05",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:09.383Z",
+    "updated_at": "2026-05-24T18:07:09.383Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "driver6"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 125-25-25",
+    "birth_date": "1985-06-06",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:09.619Z",
+    "updated_at": "2026-05-24T18:07:09.619Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "driver7"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 126-26-26",
+    "birth_date": "1984-07-07",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:09.855Z",
+    "updated_at": "2026-05-24T18:07:09.855Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "driver8"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 127-27-27",
+    "birth_date": "1983-08-08",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:10.092Z",
+    "updated_at": "2026-05-24T18:07:10.092Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "driver9"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 128-28-28",
+    "birth_date": "1982-09-09",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:10.329Z",
+    "updated_at": "2026-05-24T18:07:10.329Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "driver10"
+    ],
+    "role": "driver",
+    "phone": "+375 (29) 129-29-29",
+    "birth_date": "1981-10-10",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:10.567Z",
+    "updated_at": "2026-05-24T18:07:10.567Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "client1"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 150-50-50",
+    "birth_date": "1985-03-01",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:10.814Z",
+    "updated_at": "2026-05-24T18:07:10.814Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "client2"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 151-51-51",
+    "birth_date": "1986-04-02",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:11.053Z",
+    "updated_at": "2026-05-24T18:07:11.053Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "client3"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 152-52-52",
+    "birth_date": "1987-05-03",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:11.292Z",
+    "updated_at": "2026-05-24T18:07:11.292Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "client4"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 153-53-53",
+    "birth_date": "1988-06-04",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:11.530Z",
+    "updated_at": "2026-05-24T18:07:11.530Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "client5"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 154-54-54",
+    "birth_date": "1989-07-05",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:11.770Z",
+    "updated_at": "2026-05-24T18:07:11.770Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "client6"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 155-55-55",
+    "birth_date": "1990-08-06",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:12.012Z",
+    "updated_at": "2026-05-24T18:07:12.012Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "client7"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 156-56-56",
+    "birth_date": "1991-09-07",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:12.252Z",
+    "updated_at": "2026-05-24T18:07:12.252Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "client8"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 157-57-57",
+    "birth_date": "1992-10-08",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:12.490Z",
+    "updated_at": "2026-05-24T18:07:12.490Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "client9"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 158-58-58",
+    "birth_date": "1993-11-09",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:12.729Z",
+    "updated_at": "2026-05-24T18:07:12.729Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "client10"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 159-59-59",
+    "birth_date": "1994-12-10",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:12.968Z",
+    "updated_at": "2026-05-24T18:07:12.968Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "client11"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 160-60-60",
+    "birth_date": "1995-01-11",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:07:13.207Z",
+    "updated_at": "2026-05-24T18:07:13.207Z"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "role": "client",
+    "phone": "+375 (29) 999-99-99",
+    "birth_date": "1990-01-01",
+    "timezone": "Europe/Minsk",
+    "created_at": "2026-05-24T18:15:35.540Z",
+    "updated_at": "2026-05-24T18:15:35.540Z"
+  }
+},
+{
+  "model": "main.companyinfo",
+  "pk": 1,
+  "fields": {
+    "title": "О компании CargoGo",
+    "text": "Мы занимаемся грузоперевозками автотранспортом по всей Беларуси и за её пределами.",
+    "history": "2018 — основание компании.\n2020 — открытие филиала в Гомеле.\n2023 — собственный парк >100 машин.",
+    "requisites": "УНП 190000001\nр/с BY00 ALFA 3012 5555 5555 5555 5555\nЮр. адрес: г. Минск, ул. Магистральная, 1",
+    "video_url": "",
+    "logo": "company/logo.jpg",
+    "updated_at": "2026-05-24T20:00:40.669Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 1,
+  "fields": {
+    "title": "Открыли филиал в Бресте",
+    "summary": "Кратко: открыли филиал в бресте.",
+    "content": "Полный текст новости «Открыли филиал в Бресте». Подробности — в статье.",
+    "image": "news/news_0.jpg",
+    "author": null,
+    "published_at": "2026-05-24T18:07:13.254Z",
+    "created_at": "2026-05-24T18:07:13.255Z",
+    "updated_at": "2026-05-24T20:00:14.443Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 2,
+  "fields": {
+    "title": "Расширили автопарк",
+    "summary": "Кратко: расширили автопарк.",
+    "content": "Полный текст новости «Расширили автопарк». Подробности — в статье.",
+    "image": "news/news_2.jpg",
+    "author": null,
+    "published_at": "2026-05-21T18:07:13.255Z",
+    "created_at": "2026-05-24T18:07:13.255Z",
+    "updated_at": "2026-05-24T20:00:17.468Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 3,
+  "fields": {
+    "title": "Новая услуга — экспресс-доставка",
+    "summary": "Кратко: новая услуга — экспресс-доставка.",
+    "content": "Полный текст новости «Новая услуга — экспресс-доставка». Подробности — в статье.",
+    "image": "news/news_3.jpg",
+    "author": null,
+    "published_at": "2026-05-18T18:07:13.255Z",
+    "created_at": "2026-05-24T18:07:13.256Z",
+    "updated_at": "2026-05-24T20:00:18.982Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 4,
+  "fields": {
+    "title": "Скидки на перевозки в марте",
+    "summary": "Кратко: скидки на перевозки в марте.",
+    "content": "Полный текст новости «Скидки на перевозки в марте». Подробности — в статье.",
+    "image": "news/news_4.jpg",
+    "author": null,
+    "published_at": "2026-05-15T18:07:13.256Z",
+    "created_at": "2026-05-24T18:07:13.256Z",
+    "updated_at": "2026-05-24T20:00:20.341Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 5,
+  "fields": {
+    "title": "Получили сертификат ISO 9001",
+    "summary": "Кратко: получили сертификат iso 9001.",
+    "content": "Полный текст новости «Получили сертификат ISO 9001». Подробности — в статье.",
+    "image": "news/news_5.jpg",
+    "author": null,
+    "published_at": "2026-05-12T18:07:13.256Z",
+    "created_at": "2026-05-24T18:07:13.256Z",
+    "updated_at": "2026-05-24T20:00:21.575Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 6,
+  "fields": {
+    "title": "Открыли вакансии для водителей",
+    "summary": "Кратко: открыли вакансии для водителей.",
+    "content": "Полный текст новости «Открыли вакансии для водителей». Подробности — в статье.",
+    "image": "news/news_6.jpg",
+    "author": null,
+    "published_at": "2026-05-09T18:07:13.257Z",
+    "created_at": "2026-05-24T18:07:13.257Z",
+    "updated_at": "2026-05-24T20:00:23.267Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 7,
+  "fields": {
+    "title": "Запустили личный кабинет",
+    "summary": "Кратко: запустили личный кабинет.",
+    "content": "Полный текст новости «Запустили личный кабинет». Подробности — в статье.",
+    "image": "news/news_7.jpg",
+    "author": null,
+    "published_at": "2026-05-06T18:07:13.257Z",
+    "created_at": "2026-05-24T18:07:13.257Z",
+    "updated_at": "2026-05-24T20:00:24.955Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 8,
+  "fields": {
+    "title": "Поездки в ЕС возобновлены",
+    "summary": "Кратко: поездки в ес возобновлены.",
+    "content": "Полный текст новости «Поездки в ЕС возобновлены». Подробности — в статье.",
+    "image": "news/news_8.jpg",
+    "author": null,
+    "published_at": "2026-05-03T18:07:13.257Z",
+    "created_at": "2026-05-24T18:07:13.258Z",
+    "updated_at": "2026-05-24T20:00:26.569Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 9,
+  "fields": {
+    "title": "Подписали договор с крупным сетевым ритейлером",
+    "summary": "Кратко: подписали договор с крупным сетевым ритейлером.",
+    "content": "Полный текст новости «Подписали договор с крупным сетевым ритейлером». Подробности — в статье.",
+    "image": "news/news_9.jpg",
+    "author": null,
+    "published_at": "2026-04-30T18:07:13.258Z",
+    "created_at": "2026-05-24T18:07:13.258Z",
+    "updated_at": "2026-05-24T20:00:30.876Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 10,
+  "fields": {
+    "title": "Обновили парк рефрижераторов",
+    "summary": "Кратко: обновили парк рефрижераторов.",
+    "content": "Полный текст новости «Обновили парк рефрижераторов». Подробности — в статье.",
+    "image": "news/news/news_9.png",
+    "author": null,
+    "published_at": "2026-04-27T18:07:13.258Z",
+    "created_at": "2026-05-24T18:07:13.258Z",
+    "updated_at": "2026-05-24T18:39:15.210Z"
+  }
+},
+{
+  "model": "main.news",
+  "pk": 11,
+  "fields": {
+    "title": "Test news from smoke",
+    "summary": "Краткое содержание",
+    "content": "Полный текст новости",
+    "image": "news/news_1.jpg",
+    "author": [
+      "admin"
+    ],
+    "published_at": "2026-05-24T10:10:00Z",
+    "created_at": "2026-05-24T18:23:22.609Z",
+    "updated_at": "2026-05-24T20:00:15.788Z"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 1,
+  "fields": {
+    "question": "Что такое грузоперевозка?",
+    "answer": "Это услуга по доставке груза автомобильным транспортом.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 2,
+  "fields": {
+    "question": "Как рассчитывается стоимость?",
+    "answer": "Стоимость = расстояние × цена за км по выбранным услугам.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 3,
+  "fields": {
+    "question": "Что такое ADR?",
+    "answer": "Соглашение о международной перевозке опасных грузов.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 4,
+  "fields": {
+    "question": "Какие документы нужны?",
+    "answer": "ТТН, договор, паспорт груза.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 5,
+  "fields": {
+    "question": "Что такое сборный груз?",
+    "answer": "Партия от нескольких отправителей в одной машине.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 6,
+  "fields": {
+    "question": "Можно ли застраховать груз?",
+    "answer": "Да, через нашу услугу «Страховка груза».",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 7,
+  "fields": {
+    "question": "Что значит «тент»?",
+    "answer": "Грузовик с тентованным закрытым кузовом.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 8,
+  "fields": {
+    "question": "Что такое рефрижератор?",
+    "answer": "Авто с холодильной установкой для скоропорта.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 9,
+  "fields": {
+    "question": "Можно ли отслеживать груз?",
+    "answer": "Да, в личном кабинете отображается статус заказа.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 10,
+  "fields": {
+    "question": "Доставка по выходным?",
+    "answer": "Да, при срочной доставке возможна доставка 24/7.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.faq",
+  "pk": 11,
+  "fields": {
+    "question": "Что входит в услугу «грузчик»?",
+    "answer": "Погрузка и разгрузка силами наших грузчиков.",
+    "added_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 1,
+  "fields": {
+    "full_name": "Иванов Иван Иванович",
+    "position": "Директор",
+    "description": "Общее руководство",
+    "phone": "+375 (29) 170-70-70",
+    "email": "director@cargo.example",
+    "photo": "contacts/contact_0.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 2,
+  "fields": {
+    "full_name": "Петрова Анна Сергеевна",
+    "position": "Главный бухгалтер",
+    "description": "Финансы и отчётность",
+    "phone": "+375 (29) 171-71-71",
+    "email": "accounting@cargo.example",
+    "photo": "contacts/contact_1.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 3,
+  "fields": {
+    "full_name": "Сидоров Алексей Петрович",
+    "position": "Логист",
+    "description": "Маршруты и расписание",
+    "phone": "+375 (29) 172-72-72",
+    "email": "logistics@cargo.example",
+    "photo": "contacts/contact_2.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 4,
+  "fields": {
+    "full_name": "Кузнецова Мария Ивановна",
+    "position": "HR-менеджер",
+    "description": "Подбор персонала",
+    "phone": "+375 (29) 173-73-73",
+    "email": "hr@cargo.example",
+    "photo": "contacts/contact_3.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 5,
+  "fields": {
+    "full_name": "Смирнов Дмитрий Олегович",
+    "position": "Технический директор",
+    "description": "Парк ТС",
+    "phone": "+375 (29) 174-74-74",
+    "email": "tech@cargo.example",
+    "photo": "contacts/contact_4.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 6,
+  "fields": {
+    "full_name": "Попова Ольга Викторовна",
+    "position": "Менеджер по работе с клиентами",
+    "description": "Сопровождение клиентов",
+    "phone": "+375 (29) 175-75-75",
+    "email": "sales@cargo.example",
+    "photo": "contacts/contact_5.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 7,
+  "fields": {
+    "full_name": "Соколов Виктор Андреевич",
+    "position": "Юрист",
+    "description": "Договоры и претензии",
+    "phone": "+375 (29) 176-76-76",
+    "email": "legal@cargo.example",
+    "photo": "contacts/contact_6.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 8,
+  "fields": {
+    "full_name": "Лебедев Андрей Сергеевич",
+    "position": "IT-специалист",
+    "description": "Поддержка IT-систем",
+    "phone": "+375 (29) 177-77-77",
+    "email": "it@cargo.example",
+    "photo": "contacts/contact_7.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 9,
+  "fields": {
+    "full_name": "Козлов Сергей Иванович",
+    "position": "Главный механик",
+    "description": "Ремонт техники",
+    "phone": "+375 (29) 178-78-78",
+    "email": "service@cargo.example",
+    "photo": "contacts/contact_8.jpg"
+  }
+},
+{
+  "model": "main.contact",
+  "pk": 10,
+  "fields": {
+    "full_name": "Новикова Юлия Александровна",
+    "position": "Маркетолог",
+    "description": "Продвижение услуг",
+    "phone": "+375 (29) 179-79-79",
+    "email": "marketing@cargo.example",
+    "photo": "contacts/contact_9.jpg"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 1,
+  "fields": {
+    "title": "Водитель категории C",
+    "description": "Опыт от 3 лет, опыт международных перевозок приветствуется.",
+    "salary": "2500.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 2,
+  "fields": {
+    "title": "Водитель-экспедитор",
+    "description": "Доставка по РБ.",
+    "salary": "1800.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 3,
+  "fields": {
+    "title": "Логист",
+    "description": "Опыт работы с TMS.",
+    "salary": "2200.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 4,
+  "fields": {
+    "title": "Механик СТО",
+    "description": "Ремонт грузового транспорта.",
+    "salary": "2100.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 5,
+  "fields": {
+    "title": "Менеджер по продажам",
+    "description": "Активная работа с клиентами.",
+    "salary": "1700.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 6,
+  "fields": {
+    "title": "Кладовщик",
+    "description": "Склад в Минске.",
+    "salary": "1400.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 7,
+  "fields": {
+    "title": "Бухгалтер",
+    "description": "Опыт от 2 лет.",
+    "salary": "1900.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 8,
+  "fields": {
+    "title": "Грузчик",
+    "description": "Полная занятость.",
+    "salary": "1100.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 9,
+  "fields": {
+    "title": "Диспетчер",
+    "description": "Сменный график.",
+    "salary": "1600.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.vacancy",
+  "pk": 10,
+  "fields": {
+    "title": "IT-специалист",
+    "description": "Поддержка 1С и сайта.",
+    "salary": "2400.00",
+    "is_active": true,
+    "posted_at": "2026-05-24"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 1,
+  "fields": {
+    "author": [
+      "client1"
+    ],
+    "rating": 5,
+    "text": "Очень доволен сервисом, доставили быстро и в срок.",
+    "created_at": "2026-05-24T18:07:13.250Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 2,
+  "fields": {
+    "author": [
+      "client2"
+    ],
+    "rating": 4,
+    "text": "Хорошая цена, рекомендую.",
+    "created_at": "2026-05-24T18:07:13.251Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 3,
+  "fields": {
+    "author": [
+      "client3"
+    ],
+    "rating": 5,
+    "text": "Менеджер вежливый, ответил на все вопросы.",
+    "created_at": "2026-05-24T18:07:13.251Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 4,
+  "fields": {
+    "author": [
+      "client4"
+    ],
+    "rating": 3,
+    "text": "Доставка немного задержалась, но в целом ок.",
+    "created_at": "2026-05-24T18:07:13.252Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 5,
+  "fields": {
+    "author": [
+      "client5"
+    ],
+    "rating": 5,
+    "text": "Отличный сервис!",
+    "created_at": "2026-05-24T18:07:13.252Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 6,
+  "fields": {
+    "author": [
+      "client6"
+    ],
+    "rating": 5,
+    "text": "Спасибо за оперативность.",
+    "created_at": "2026-05-24T18:07:13.252Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 7,
+  "fields": {
+    "author": [
+      "client7"
+    ],
+    "rating": 4,
+    "text": "Удобный личный кабинет.",
+    "created_at": "2026-05-24T18:07:13.253Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 8,
+  "fields": {
+    "author": [
+      "client8"
+    ],
+    "rating": 4,
+    "text": "Можно было бы быстрее, но всё на уровне.",
+    "created_at": "2026-05-24T18:07:13.253Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 9,
+  "fields": {
+    "author": [
+      "client9"
+    ],
+    "rating": 5,
+    "text": "Постоянно пользуюсь — нравится.",
+    "created_at": "2026-05-24T18:07:13.254Z"
+  }
+},
+{
+  "model": "main.review",
+  "pk": 10,
+  "fields": {
+    "author": [
+      "client10"
+    ],
+    "rating": 4,
+    "text": "Хорошее соотношение цена/качество.",
+    "created_at": "2026-05-24T18:07:13.254Z"
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 1,
+  "fields": {
+    "code": "WELCOME10",
+    "discount_percent": 10,
+    "description": "Промокод WELCOME10",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 2,
+  "fields": {
+    "code": "SUMMER15",
+    "discount_percent": 15,
+    "description": "Промокод SUMMER15",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 3,
+  "fields": {
+    "code": "CARGO20",
+    "discount_percent": 20,
+    "description": "Промокод CARGO20",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 4,
+  "fields": {
+    "code": "BIG30",
+    "discount_percent": 30,
+    "description": "Промокод BIG30",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 5,
+  "fields": {
+    "code": "LOYAL5",
+    "discount_percent": 5,
+    "description": "Промокод LOYAL5",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 6,
+  "fields": {
+    "code": "SPRING12",
+    "discount_percent": 12,
+    "description": "Промокод SPRING12",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 7,
+  "fields": {
+    "code": "FREIGHT25",
+    "discount_percent": 25,
+    "description": "Промокод FREIGHT25",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 8,
+  "fields": {
+    "code": "NEW5",
+    "discount_percent": 5,
+    "description": "Промокод NEW5",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-07-23",
+    "is_archived": false
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 9,
+  "fields": {
+    "code": "OLD2022",
+    "discount_percent": 20,
+    "description": "Промокод OLD2022",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-05-14",
+    "is_archived": true
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 10,
+  "fields": {
+    "code": "OLD2023",
+    "discount_percent": 25,
+    "description": "Промокод OLD2023",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-05-14",
+    "is_archived": true
+  }
+},
+{
+  "model": "main.promocode",
+  "pk": 11,
+  "fields": {
+    "code": "OLDWINTER",
+    "discount_percent": 10,
+    "description": "Промокод OLDWINTER",
+    "valid_from": "2026-04-24",
+    "valid_to": "2026-05-14",
+    "is_archived": true
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 1,
+  "fields": {
+    "name": "Грузовик",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 2,
+  "fields": {
+    "name": "Фургон",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 3,
+  "fields": {
+    "name": "Тягач",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 4,
+  "fields": {
+    "name": "Самосвал",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 5,
+  "fields": {
+    "name": "Бортовой",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 6,
+  "fields": {
+    "name": "Рефрижератор",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 7,
+  "fields": {
+    "name": "Автоцистерна",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.vehicletype",
+  "pk": 8,
+  "fields": {
+    "name": "Микроавтобус",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 1,
+  "fields": {
+    "name": "Тентованный",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 2,
+  "fields": {
+    "name": "Изотермический",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 3,
+  "fields": {
+    "name": "Открытый бортовой",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 4,
+  "fields": {
+    "name": "Самосвальный",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 5,
+  "fields": {
+    "name": "Цистерна",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 6,
+  "fields": {
+    "name": "Контейнерный",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 7,
+  "fields": {
+    "name": "Рефрижератор",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.bodytype",
+  "pk": 8,
+  "fields": {
+    "name": "Закрытый",
+    "description": ""
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 1,
+  "fields": {
+    "name": "Продукты питания",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 2,
+  "fields": {
+    "name": "Бытовая техника",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 3,
+  "fields": {
+    "name": "Стройматериалы",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 4,
+  "fields": {
+    "name": "Мебель",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 5,
+  "fields": {
+    "name": "Топливо",
+    "description": "",
+    "is_dangerous": true
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 6,
+  "fields": {
+    "name": "Химия",
+    "description": "",
+    "is_dangerous": true
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 7,
+  "fields": {
+    "name": "Одежда",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 8,
+  "fields": {
+    "name": "Электроника",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 9,
+  "fields": {
+    "name": "Сыпучие грузы",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 10,
+  "fields": {
+    "name": "Медикаменты",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 11,
+  "fields": {
+    "name": "Скоропортящиеся",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.cargotype",
+  "pk": 12,
+  "fields": {
+    "name": "Авто",
+    "description": "",
+    "is_dangerous": false
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "driver1"
+    ],
+    "first_name": "Иван",
+    "last_name": "Иванов",
+    "birth_date": "1990-01-01",
+    "phone": "+375 (29) 120-20-20",
+    "license_number": "AB1000BY",
+    "hired_at": "2020-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "driver2"
+    ],
+    "first_name": "Пётр",
+    "last_name": "Петров",
+    "birth_date": "1989-02-02",
+    "phone": "+375 (29) 121-21-21",
+    "license_number": "AB1007BY",
+    "hired_at": "2021-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "driver3"
+    ],
+    "first_name": "Андрей",
+    "last_name": "Сидоров",
+    "birth_date": "1988-03-03",
+    "phone": "+375 (29) 122-22-22",
+    "license_number": "AB1014BY",
+    "hired_at": "2022-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "driver4"
+    ],
+    "first_name": "Сергей",
+    "last_name": "Кузнецов",
+    "birth_date": "1987-04-04",
+    "phone": "+375 (29) 123-23-23",
+    "license_number": "AB1021BY",
+    "hired_at": "2023-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "driver5"
+    ],
+    "first_name": "Дмитрий",
+    "last_name": "Смирнов",
+    "birth_date": "1986-05-05",
+    "phone": "+375 (29) 124-24-24",
+    "license_number": "AB1028BY",
+    "hired_at": "2020-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "driver6"
+    ],
+    "first_name": "Алексей",
+    "last_name": "Соколов",
+    "birth_date": "1985-06-06",
+    "phone": "+375 (29) 125-25-25",
+    "license_number": "AB1035BY",
+    "hired_at": "2021-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "driver7"
+    ],
+    "first_name": "Михаил",
+    "last_name": "Попов",
+    "birth_date": "1984-07-07",
+    "phone": "+375 (29) 126-26-26",
+    "license_number": "AB1042BY",
+    "hired_at": "2022-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "driver8"
+    ],
+    "first_name": "Николай",
+    "last_name": "Лебедев",
+    "birth_date": "1983-08-08",
+    "phone": "+375 (29) 127-27-27",
+    "license_number": "AB1049BY",
+    "hired_at": "2023-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "driver9"
+    ],
+    "first_name": "Виктор",
+    "last_name": "Козлов",
+    "birth_date": "1982-09-09",
+    "phone": "+375 (29) 128-28-28",
+    "license_number": "AB1056BY",
+    "hired_at": "2020-05-15"
+  }
+},
+{
+  "model": "cargo.driver",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "driver10"
+    ],
+    "first_name": "Олег",
+    "last_name": "Новиков",
+    "birth_date": "1981-10-10",
+    "phone": "+375 (29) 129-29-29",
+    "license_number": "AB1063BY",
+    "hired_at": "2021-05-15"
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 1,
+  "fields": {
+    "brand": "MAN",
+    "model": "TGS",
+    "plate_number": "AB1234-7",
+    "vehicle_type": 7,
+    "body_type": 8,
+    "capacity_tons": "3.00",
+    "year": 2018,
+    "driver": 1
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 2,
+  "fields": {
+    "brand": "Volvo",
+    "model": "FH",
+    "plate_number": "AB1235-7",
+    "vehicle_type": 5,
+    "body_type": 2,
+    "capacity_tons": "4.50",
+    "year": 2019,
+    "driver": 9
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 3,
+  "fields": {
+    "brand": "Scania",
+    "model": "R",
+    "plate_number": "AB1236-7",
+    "vehicle_type": 1,
+    "body_type": 6,
+    "capacity_tons": "6.00",
+    "year": 2020,
+    "driver": 4
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 4,
+  "fields": {
+    "brand": "MAZ",
+    "model": "5440",
+    "plate_number": "AB1237-7",
+    "vehicle_type": 8,
+    "body_type": 3,
+    "capacity_tons": "7.50",
+    "year": 2021,
+    "driver": 8
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 5,
+  "fields": {
+    "brand": "DAF",
+    "model": "XF",
+    "plate_number": "AB1238-7",
+    "vehicle_type": 6,
+    "body_type": 7,
+    "capacity_tons": "9.00",
+    "year": 2022,
+    "driver": 10
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 6,
+  "fields": {
+    "brand": "Mercedes",
+    "model": "Actros",
+    "plate_number": "AB1239-7",
+    "vehicle_type": 4,
+    "body_type": 4,
+    "capacity_tons": "10.50",
+    "year": 2023,
+    "driver": 2
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 7,
+  "fields": {
+    "brand": "Iveco",
+    "model": "Stralis",
+    "plate_number": "AB1240-7",
+    "vehicle_type": 3,
+    "body_type": 1,
+    "capacity_tons": "12.00",
+    "year": 2018,
+    "driver": 7
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 8,
+  "fields": {
+    "brand": "Renault",
+    "model": "T",
+    "plate_number": "AB1241-7",
+    "vehicle_type": 2,
+    "body_type": 5,
+    "capacity_tons": "13.50",
+    "year": 2019,
+    "driver": 3
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 9,
+  "fields": {
+    "brand": "KAMAZ",
+    "model": "5490",
+    "plate_number": "AB1242-7",
+    "vehicle_type": 7,
+    "body_type": 8,
+    "capacity_tons": "15.00",
+    "year": 2020,
+    "driver": 5
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 10,
+  "fields": {
+    "brand": "Ford",
+    "model": "Cargo",
+    "plate_number": "AB1243-7",
+    "vehicle_type": 5,
+    "body_type": 2,
+    "capacity_tons": "16.50",
+    "year": 2021,
+    "driver": 6
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 11,
+  "fields": {
+    "brand": "Hyundai",
+    "model": "Mighty",
+    "plate_number": "AB1244-7",
+    "vehicle_type": 1,
+    "body_type": 6,
+    "capacity_tons": "18.00",
+    "year": 2022,
+    "driver": null
+  }
+},
+{
+  "model": "cargo.vehicle",
+  "pk": 12,
+  "fields": {
+    "brand": "Isuzu",
+    "model": "NQR",
+    "plate_number": "AB1245-7",
+    "vehicle_type": 8,
+    "body_type": 3,
+    "capacity_tons": "19.50",
+    "year": 2023,
+    "driver": null
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 1,
+  "fields": {
+    "name": "ООО «ТрансКом-1»",
+    "legal_address": "г. Минск, ул. Магистральная, 1",
+    "inn": "1900000001",
+    "phone": "+375 (29) 101-01-01",
+    "email": "org1@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 2,
+  "fields": {
+    "name": "ООО «ТрансКом-2»",
+    "legal_address": "г. Минск, ул. Магистральная, 2",
+    "inn": "1900000002",
+    "phone": "+375 (29) 102-02-02",
+    "email": "org2@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 3,
+  "fields": {
+    "name": "ООО «ТрансКом-3»",
+    "legal_address": "г. Минск, ул. Магистральная, 3",
+    "inn": "1900000003",
+    "phone": "+375 (29) 103-03-03",
+    "email": "org3@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 4,
+  "fields": {
+    "name": "ООО «ТрансКом-4»",
+    "legal_address": "г. Минск, ул. Магистральная, 4",
+    "inn": "1900000004",
+    "phone": "+375 (29) 104-04-04",
+    "email": "org4@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 5,
+  "fields": {
+    "name": "ООО «ТрансКом-5»",
+    "legal_address": "г. Минск, ул. Магистральная, 5",
+    "inn": "1900000005",
+    "phone": "+375 (29) 105-05-05",
+    "email": "org5@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 6,
+  "fields": {
+    "name": "ООО «ТрансКом-6»",
+    "legal_address": "г. Минск, ул. Магистральная, 6",
+    "inn": "1900000006",
+    "phone": "+375 (29) 106-06-06",
+    "email": "org6@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 7,
+  "fields": {
+    "name": "ООО «ТрансКом-7»",
+    "legal_address": "г. Минск, ул. Магистральная, 7",
+    "inn": "1900000007",
+    "phone": "+375 (29) 107-07-07",
+    "email": "org7@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 8,
+  "fields": {
+    "name": "ООО «ТрансКом-8»",
+    "legal_address": "г. Минск, ул. Магистральная, 8",
+    "inn": "1900000008",
+    "phone": "+375 (29) 108-08-08",
+    "email": "org8@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 9,
+  "fields": {
+    "name": "ООО «ТрансКом-9»",
+    "legal_address": "г. Минск, ул. Магистральная, 9",
+    "inn": "1900000009",
+    "phone": "+375 (29) 109-09-09",
+    "email": "org9@example.com"
+  }
+},
+{
+  "model": "cargo.organization",
+  "pk": 10,
+  "fields": {
+    "name": "ООО «ТрансКом-10»",
+    "legal_address": "г. Минск, ул. Магистральная, 10",
+    "inn": "1900000010",
+    "phone": "+375 (29) 110-10-10",
+    "email": "org10@example.com"
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "client1"
+    ],
+    "first_name": "Анна",
+    "last_name": "Смирнова",
+    "birth_date": "1985-03-01",
+    "phone": "+375 (29) 150-50-50",
+    "organization": 10
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "client2"
+    ],
+    "first_name": "Мария",
+    "last_name": "Иванова",
+    "birth_date": "1986-04-02",
+    "phone": "+375 (29) 151-51-51",
+    "organization": null
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "client3"
+    ],
+    "first_name": "Светлана",
+    "last_name": "Кузнецова",
+    "birth_date": "1987-05-03",
+    "phone": "+375 (29) 152-52-52",
+    "organization": 2
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "client4"
+    ],
+    "first_name": "Ольга",
+    "last_name": "Попова",
+    "birth_date": "1988-06-04",
+    "phone": "+375 (29) 153-53-53",
+    "organization": null
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "client5"
+    ],
+    "first_name": "Татьяна",
+    "last_name": "Соколова",
+    "birth_date": "1989-07-05",
+    "phone": "+375 (29) 154-54-54",
+    "organization": 4
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "client6"
+    ],
+    "first_name": "Елена",
+    "last_name": "Лебедева",
+    "birth_date": "1990-08-06",
+    "phone": "+375 (29) 155-55-55",
+    "organization": null
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "client7"
+    ],
+    "first_name": "Наталья",
+    "last_name": "Козлова",
+    "birth_date": "1991-09-07",
+    "phone": "+375 (29) 156-56-56",
+    "organization": 6
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "client8"
+    ],
+    "first_name": "Юлия",
+    "last_name": "Новикова",
+    "birth_date": "1992-10-08",
+    "phone": "+375 (29) 157-57-57",
+    "organization": null
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "client9"
+    ],
+    "first_name": "Дарья",
+    "last_name": "Морозова",
+    "birth_date": "1993-11-09",
+    "phone": "+375 (29) 158-58-58",
+    "organization": 8
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "client10"
+    ],
+    "first_name": "Алина",
+    "last_name": "Петрова",
+    "birth_date": "1994-12-10",
+    "phone": "+375 (29) 159-59-59",
+    "organization": null
+  }
+},
+{
+  "model": "cargo.client",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "client11"
+    ],
+    "first_name": "Карина",
+    "last_name": "Волкова",
+    "birth_date": "1995-01-11",
+    "phone": "+375 (29) 160-60-60",
+    "organization": 10
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 1,
+  "fields": {
+    "name": "Перевозка тентованным грузовиком",
+    "description": "Услуга: Перевозка тентованным грузовиком.",
+    "price_per_km": "8.50",
+    "is_additional": false,
+    "suitable_cargo": [
+      9,
+      5,
+      6,
+      8
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 2,
+  "fields": {
+    "name": "Перевозка изотермическим фургоном",
+    "description": "Услуга: Перевозка изотермическим фургоном.",
+    "price_per_km": "12.00",
+    "is_additional": false,
+    "suitable_cargo": [
+      12,
+      7,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 3,
+  "fields": {
+    "name": "Перевозка контейнера 20ft",
+    "description": "Услуга: Перевозка контейнера 20ft.",
+    "price_per_km": "15.00",
+    "is_additional": false,
+    "suitable_cargo": [
+      4,
+      9,
+      6,
+      8
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 4,
+  "fields": {
+    "name": "Перевозка рефрижератором",
+    "description": "Услуга: Перевозка рефрижератором.",
+    "price_per_km": "18.50",
+    "is_additional": false,
+    "suitable_cargo": [
+      2,
+      10,
+      1,
+      11
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 5,
+  "fields": {
+    "name": "Перевозка сыпучих грузов",
+    "description": "Услуга: Перевозка сыпучих грузов.",
+    "price_per_km": "7.20",
+    "is_additional": false,
+    "suitable_cargo": [
+      4,
+      10,
+      7,
+      11
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 6,
+  "fields": {
+    "name": "Доставка опасных грузов (ADR)",
+    "description": "Услуга: Доставка опасных грузов (ADR).",
+    "price_per_km": "25.00",
+    "is_additional": false,
+    "suitable_cargo": [
+      7,
+      1,
+      6,
+      8
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 7,
+  "fields": {
+    "name": "Экспресс-доставка",
+    "description": "Услуга: Экспресс-доставка.",
+    "price_per_km": "14.30",
+    "is_additional": false,
+    "suitable_cargo": [
+      4,
+      7,
+      1,
+      9
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 8,
+  "fields": {
+    "name": "Грузчик в комплекте",
+    "description": "Услуга: Грузчик в комплекте.",
+    "price_per_km": "5.00",
+    "is_additional": true,
+    "suitable_cargo": [
+      4,
+      7,
+      11,
+      5
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 9,
+  "fields": {
+    "name": "Страховка груза",
+    "description": "Услуга: Страховка груза.",
+    "price_per_km": "2.50",
+    "is_additional": true,
+    "suitable_cargo": [
+      11,
+      3,
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 10,
+  "fields": {
+    "name": "Сопровождение охраной",
+    "description": "Услуга: Сопровождение охраной.",
+    "price_per_km": "11.00",
+    "is_additional": true,
+    "suitable_cargo": [
+      2,
+      4,
+      11,
+      6
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 11,
+  "fields": {
+    "name": "Упаковка груза",
+    "description": "Услуга: Упаковка груза.",
+    "price_per_km": "4.50",
+    "is_additional": true,
+    "suitable_cargo": [
+      2,
+      7,
+      11,
+      5
+    ]
+  }
+},
+{
+  "model": "cargo.service",
+  "pk": 12,
+  "fields": {
+    "name": "Подъём на этаж",
+    "description": "Услуга: Подъём на этаж.",
+    "price_per_km": "3.50",
+    "is_additional": true,
+    "suitable_cargo": [
+      12,
+      4,
+      3,
+      8
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 1,
+  "fields": {
+    "client": 11,
+    "driver": 1,
+    "vehicle": 5,
+    "cargo_type": 12,
+    "cargo_name": "Заказ-партия №1",
+    "distance_km": "50.00",
+    "weight_tons": "1.00",
+    "status": "new",
+    "promo_code": 1,
+    "scheduled_at": "2026-05-21T18:07:13.227Z",
+    "created_at": "2026-05-24T18:07:13.227Z",
+    "updated_at": "2026-05-24T18:07:13.227Z",
+    "services": [
+      2,
+      1,
+      10
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 2,
+  "fields": {
+    "client": 2,
+    "driver": 9,
+    "vehicle": 10,
+    "cargo_type": 2,
+    "cargo_name": "Заказ-партия №2",
+    "distance_km": "85.00",
+    "weight_tons": "1.70",
+    "status": "in_progress",
+    "promo_code": null,
+    "scheduled_at": "2026-05-22T18:07:13.228Z",
+    "created_at": "2026-05-24T18:07:13.228Z",
+    "updated_at": "2026-05-24T18:07:13.228Z",
+    "services": [
+      10,
+      9,
+      7
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 3,
+  "fields": {
+    "client": 7,
+    "driver": 4,
+    "vehicle": 11,
+    "cargo_type": 4,
+    "cargo_name": "Заказ-партия №3",
+    "distance_km": "120.00",
+    "weight_tons": "2.40",
+    "status": "done",
+    "promo_code": null,
+    "scheduled_at": "2026-05-23T18:07:13.229Z",
+    "created_at": "2026-05-24T18:07:13.229Z",
+    "updated_at": "2026-05-24T18:07:13.229Z",
+    "services": [
+      12,
+      9,
+      7
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 4,
+  "fields": {
+    "client": 3,
+    "driver": 8,
+    "vehicle": 12,
+    "cargo_type": 10,
+    "cargo_name": "Заказ-партия №4",
+    "distance_km": "155.00",
+    "weight_tons": "3.10",
+    "status": "canceled",
+    "promo_code": 4,
+    "scheduled_at": "2026-05-24T18:07:13.230Z",
+    "created_at": "2026-05-24T18:07:13.230Z",
+    "updated_at": "2026-05-24T18:07:13.230Z",
+    "services": [
+      12,
+      10,
+      7
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 5,
+  "fields": {
+    "client": 6,
+    "driver": 10,
+    "vehicle": 7,
+    "cargo_type": 7,
+    "cargo_name": "Заказ-партия №5",
+    "distance_km": "190.00",
+    "weight_tons": "3.80",
+    "status": "new",
+    "promo_code": null,
+    "scheduled_at": "2026-05-25T18:07:13.231Z",
+    "created_at": "2026-05-24T18:07:13.231Z",
+    "updated_at": "2026-05-24T18:07:13.231Z",
+    "services": [
+      2,
+      3,
+      10
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 6,
+  "fields": {
+    "client": 9,
+    "driver": 2,
+    "vehicle": 9,
+    "cargo_type": 1,
+    "cargo_name": "Заказ-партия №6",
+    "distance_km": "225.00",
+    "weight_tons": "4.50",
+    "status": "in_progress",
+    "promo_code": null,
+    "scheduled_at": "2026-05-26T18:07:13.232Z",
+    "created_at": "2026-05-24T18:07:13.232Z",
+    "updated_at": "2026-05-24T18:07:13.232Z",
+    "services": [
+      2,
+      5,
+      1
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 7,
+  "fields": {
+    "client": 8,
+    "driver": 7,
+    "vehicle": 1,
+    "cargo_type": 11,
+    "cargo_name": "Заказ-партия №7",
+    "distance_km": "260.00",
+    "weight_tons": "5.20",
+    "status": "done",
+    "promo_code": 7,
+    "scheduled_at": "2026-05-27T18:07:13.232Z",
+    "created_at": "2026-05-24T18:07:13.233Z",
+    "updated_at": "2026-05-24T18:07:13.233Z",
+    "services": [
+      6,
+      4,
+      12
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 8,
+  "fields": {
+    "client": 10,
+    "driver": 3,
+    "vehicle": 4,
+    "cargo_type": 3,
+    "cargo_name": "Заказ-партия №8",
+    "distance_km": "295.00",
+    "weight_tons": "5.90",
+    "status": "canceled",
+    "promo_code": null,
+    "scheduled_at": "2026-05-28T18:07:13.233Z",
+    "created_at": "2026-05-24T18:07:13.233Z",
+    "updated_at": "2026-05-24T18:07:13.233Z",
+    "services": [
+      5,
+      9,
+      11
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 9,
+  "fields": {
+    "client": 4,
+    "driver": 5,
+    "vehicle": 6,
+    "cargo_type": 9,
+    "cargo_name": "Заказ-партия №9",
+    "distance_km": "330.00",
+    "weight_tons": "6.60",
+    "status": "new",
+    "promo_code": null,
+    "scheduled_at": "2026-05-29T18:07:13.234Z",
+    "created_at": "2026-05-24T18:07:13.234Z",
+    "updated_at": "2026-05-24T18:07:13.234Z",
+    "services": [
+      5,
+      1,
+      11
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 10,
+  "fields": {
+    "client": 1,
+    "driver": 6,
+    "vehicle": 8,
+    "cargo_type": 5,
+    "cargo_name": "Заказ-партия №10",
+    "distance_km": "365.00",
+    "weight_tons": "7.30",
+    "status": "in_progress",
+    "promo_code": 2,
+    "scheduled_at": "2026-05-30T18:07:13.235Z",
+    "created_at": "2026-05-24T18:07:13.235Z",
+    "updated_at": "2026-05-24T18:07:13.235Z",
+    "services": [
+      8,
+      6,
+      11
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 11,
+  "fields": {
+    "client": 5,
+    "driver": 1,
+    "vehicle": 3,
+    "cargo_type": 6,
+    "cargo_name": "Заказ-партия №11",
+    "distance_km": "400.00",
+    "weight_tons": "8.00",
+    "status": "done",
+    "promo_code": null,
+    "scheduled_at": "2026-05-31T18:07:13.236Z",
+    "created_at": "2026-05-24T18:07:13.236Z",
+    "updated_at": "2026-05-24T18:07:13.236Z",
+    "services": [
+      6,
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "cargo.order",
+  "pk": 12,
+  "fields": {
+    "client": 11,
+    "driver": 9,
+    "vehicle": 2,
+    "cargo_type": 8,
+    "cargo_name": "Заказ-партия №12",
+    "distance_km": "435.00",
+    "weight_tons": "8.70",
+    "status": "canceled",
+    "promo_code": null,
+    "scheduled_at": "2026-06-01T18:07:13.236Z",
+    "created_at": "2026-05-24T18:07:13.236Z",
+    "updated_at": "2026-05-24T18:07:13.236Z",
+    "services": [
+      8,
+      2,
+      1
+    ]
+  }
+}
+]

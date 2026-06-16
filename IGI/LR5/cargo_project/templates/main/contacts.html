@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Контакты — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Контакты</h1>
+
+{% if user.is_superuser %}
+    <a class="btn btn-success" href="{% url 'main:contact_create' %}">+ Добавить контакт</a>
+{% endif %}
+
+{% for c in contacts %}
+    <div class="card">
+        <img class="thumb" src="{% if c.photo %}{{ c.photo.url }}{% else %}{% static 'img/no-image.svg' %}{% endif %}" alt="{{ c.full_name }}">
+        <h3>{{ c.full_name }} — {{ c.position }}</h3>
+        <p>{{ c.description }}</p>
+        <p><strong>Тел.:</strong> {{ c.phone }} | <strong>Email:</strong> {{ c.email }}</p>
+        {% if user.is_superuser %}
+            <a class="btn btn-secondary" href="{% url 'main:contact_update' c.pk %}">Изменить</a>
+            <a class="btn btn-danger" href="{% url 'main:contact_delete' c.pk %}">Удалить</a>
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Контакты ещё не добавлены.</p>
+{% endfor %}
+{% endblock %}

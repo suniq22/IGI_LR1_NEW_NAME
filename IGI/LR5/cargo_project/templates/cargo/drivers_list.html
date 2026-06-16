@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Водители{% endblock %}
+{% block content %}
+<h1>Водители</h1>
+{% if user.is_superuser %}
+    <a class="btn btn-success" href="{% url 'cargo:driver_create' %}">+ Добавить водителя</a>
+{% endif %}
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="ФИО / номер ВУ...">
+    <select name="sort">
+        <option value="last_name" {% if sort == 'last_name' %}selected{% endif %}>Фамилия A→Я</option>
+        <option value="-last_name" {% if sort == '-last_name' %}selected{% endif %}>Фамилия Я→A</option>
+        <option value="-hired_at" {% if sort == '-hired_at' %}selected{% endif %}>Стаж ↑</option>
+        <option value="hired_at" {% if sort == 'hired_at' %}selected{% endif %}>Стаж ↓</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+<table>
+    <thead><tr><th>ФИО</th><th>Возраст</th><th>Телефон</th><th>ВУ</th><th>Принят</th>{% if user.is_superuser %}<th></th>{% endif %}</tr></thead>
+    <tbody>
+        {% for d in drivers %}
+            <tr>
+                <td>{{ d.last_name }} {{ d.first_name }}</td>
+                <td>{{ d.age }}</td>
+                <td>{{ d.phone }}</td>
+                <td>{{ d.license_number }}</td>
+                <td>{{ d.hired_at|date:"d/m/Y" }}</td>
+                {% if user.is_superuser %}
+                    <td>
+                        <a class="btn" href="{% url 'cargo:driver_update' d.pk %}">Изм.</a>
+                        <a class="btn btn-danger" href="{% url 'cargo:driver_delete' d.pk %}">Удл.</a>
+                    </td>
+                {% endif %}
+            </tr>
+        {% empty %}
+            <tr><td colspan="6">Не найдено.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Статистика{% endblock %}
+{% block content %}
+<h1>Статистика по заказам</h1>
+
+<div class="card">
+    <p><strong>Всего заказов:</strong> {{ orders_count }}</p>
+    <p><strong>Общая выручка:</strong> {{ revenue }} BYN</p>
+    <p><strong>Средняя сумма заказа:</strong> {{ avg }} BYN</p>
+    <p><strong>Медиана:</strong> {{ median }} BYN</p>
+    <p><strong>Мода (сумма):</strong> {{ mode }} BYN</p>
+    <p><strong>Средний возраст клиентов:</strong> {{ avg_age }}</p>
+    <p><strong>Медиана возраста клиентов:</strong> {{ median_age }}</p>
+    <p><strong>Самый частый вид груза:</strong> {{ popular_cargo }}</p>
+    <p><strong>Наибольшую выручку даёт:</strong> {{ best_cargo }}</p>
+</div>
+
+{% if chart_b64 %}
+    <div class="card">
+        <h2>Диаграмма выручки по видам груза (matplotlib)</h2>
+        <img src="data:image/png;base64,{{ chart_b64 }}" alt="chart">
+    </div>
+{% endif %}
+
+<div class="card">
+    <h2>Клиенты в алфавитном порядке</h2>
+    <ul>
+        {% for c in clients_alpha %}
+            <li>{{ c.last_name }} {{ c.first_name }} ({{ c.age }} лет)</li>
+        {% empty %}
+            <li>Клиенты отсутствуют.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

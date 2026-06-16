@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Вакансии — {{ site_company_name }}{% endblock %}
+{% block content %}
+<h1>Вакансии</h1>
+{% if user.is_superuser %}
+    <a class="btn" href="{% url 'main:vacancy_create' %}">+ Добавить вакансию</a>
+{% endif %}
+
+<form method="get" class="toolbar">
+    <input type="search" name="q" value="{{ q }}" placeholder="Поиск...">
+    <select name="sort">
+        <option value="-posted_at" {% if sort == '-posted_at' %}selected{% endif %}>Сначала новые</option>
+        <option value="posted_at" {% if sort == 'posted_at' %}selected{% endif %}>Сначала старые</option>
+        <option value="title" {% if sort == 'title' %}selected{% endif %}>Название A→Я</option>
+        <option value="-salary" {% if sort == '-salary' %}selected{% endif %}>Зарплата ↓</option>
+        <option value="salary" {% if sort == 'salary' %}selected{% endif %}>Зарплата ↑</option>
+    </select>
+    <button class="btn" type="submit">Применить</button>
+</form>
+
+<table>
+    <thead><tr><th>Название</th><th>Описание</th><th>Зарплата</th><th>Активна</th><th>Опубликована</th>{% if user.is_superuser %}<th></th>{% endif %}</tr></thead>
+    <tbody>
+        {% for v in vacancies %}
+            <tr>
+                <td>{{ v.title }}</td>
+                <td>{{ v.description|truncatewords:20 }}</td>
+                <td>{{ v.salary }} BYN</td>
+                <td>{% if v.is_active %}<span class="badge badge-success">Да</span>{% else %}<span class="badge">Нет</span>{% endif %}</td>
+                <td>{{ v.posted_at|date:"d/m/Y" }}</td>
+                {% if user.is_superuser %}
+                <td>
+                    <a class="btn btn-secondary" href="{% url 'main:vacancy_update' v.pk %}">Изм.</a>
+                    <a class="btn btn-danger" href="{% url 'main:vacancy_delete' v.pk %}">Удл.</a>
+                </td>
+                {% endif %}
+            </tr>
+        {% empty %}
+            <tr><td colspan="6">Вакансий нет.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
